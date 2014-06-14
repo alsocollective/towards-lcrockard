@@ -198,7 +198,7 @@ $.fn.Jtube = function( options ) {
 				"autoplay":0,
 				"vq":settings.vidQuality,
 				"html5":1,
-				"start":34,
+				"start":110,
 				"enablejsapi":1,
 				"wmode":"transparent",
 				"modestbranding":1

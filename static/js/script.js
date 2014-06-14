@@ -1,7 +1,7 @@
 console.log("setting up initial call for youtube");
 
 var myPlayer = $("#youtube-player").Jtube({
-		videoId:"hC3VTgIPoGU",
+		videoId:"vO-nOgI1CZ8",
 		skipvid:false,
 		skipWhash:false,
 		timeLeft:false,
@@ -42,3 +42,17 @@ function onYouTubeIframeAPIReady() {
 	console.log("got call back from YT and starting");
 	myPlayer.setupPlayer();
 }
+
+setTimeout(function(){
+	$("#three").removeClass('hide');
+	$("#three").addClass('animated fadeInUp');
+	console.log("FADE");
+},60000);
+
+
+
+
+
+
+
+
