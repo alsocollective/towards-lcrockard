@@ -1,5 +1,7 @@
 console.log("setting up initial call for youtube");
 
+var num;
+
 var myPlayer = $("#youtube-player").Jtube({
 		videoId:"vO-nOgI1CZ8",
 		skipvid:false,
@@ -25,7 +27,6 @@ var myPlayer = $("#youtube-player").Jtube({
 			if(settings.debugMode){
 				console.log("start");
 			}
-			// $(settings.player.a).fadeIn('fast');
 			$(settings.player.a).css({"display":"inline-block"})
 			return null;
 		},
@@ -33,7 +34,6 @@ var myPlayer = $("#youtube-player").Jtube({
 			if(settings.debugMode){
 				console.log("pause");
 			}
-			// $(settings.player.a).fadeOut('fast');
 			$(settings.player.a).css({"display":"none"})
 			return null;
 		}
@@ -43,14 +43,20 @@ function onYouTubeIframeAPIReady() {
 	myPlayer.setupPlayer();
 }
 
+$(document).ready(function(){
+	$("#project").removeClass('hide');
+	$("#project").addClass('animated fadeInUp');
+	console.log("Begin");
+	//Make random download link
+	num = Math.floor((Math.random() * 10) + 1);
+	$("#download").attr("href","art-"+num+".pdf");
+});
+
 setTimeout(function(){
 	$("#three").removeClass('hide');
 	$("#three").addClass('animated fadeInUp');
 	console.log("FADE");
-},60000);
-
-
-
+},4000);
 
 
 
