@@ -56,7 +56,7 @@ setTimeout(function(){
 	$("#three").removeClass('hide');
 	$("#three").addClass('animated fadeInUp');
 	console.log("FADE");
-},4000);
+},60000);
 
 
 
